@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "802898706122",
+    "project_id": "computacaomovel-a9ac4",
+    "storage_bucket": "computacaomovel-a9ac4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802898706122:android:f49b6eae26cafb12bafe33",
+        "android_client_info": {
+          "package_name": "com.example.computacaomovel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802898706122-fslqma8pi705aomkek60027v15l2ni6v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZNbWfAaVa4fL2UPsYXcgEse-yNVtnAIw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802898706122-fslqma8pi705aomkek60027v15l2ni6v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/logout"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_logoutMain"
+        app:layout_constraintEnd_toEndOf="@+id/bt_logoutMain"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/bt_logoutMain"
+        app:layout_constraintTop_toTopOf="@+id/bt_logoutMain"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_logoutMain"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        app:layout_constraintBottom_toTopOf="@+id/bt_createExpense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_createExpense"
+        style="@style/ButtonMain"
+        android:text="@string/CreateExpense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_createStudy"
+        style="@style/ButtonMain"
+        android:layout_marginTop="4dp"
+        android:text="@string/CreateStudy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.662"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_createExpense" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_addExpense"
+        style="@style/ButtonMain"
+        android:layout_marginTop="4dp"
+        android:text="@string/AddExpense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_createStudy" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_addStudy"
+        style="@style/ButtonMain"
+        android:layout_marginTop="4dp"
+        android:text="@string/AddStudy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_addExpense" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_expenseHistory"
+        style="@style/ButtonMain"
+        android:text="@string/ExpenseHistory"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_addStudy" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_studyHistory"
+        style="@style/ButtonMain"
+        android:text="@string/StudyHistory"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_expenseHistory" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
